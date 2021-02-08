@@ -2,7 +2,7 @@ h1,h2,h3,h4,h5,h6{
   font-family:'Segoe UI',Arial,sans-serif;
   font-weight:700;text-transform:none;color:black
 }
-h1{font-size:6rem;line-height:5.5rem}
+h1{font-size:3.5rem}
 h2{font-size:3.5rem}
 h3{font-size:2rem}
 h4{font-size:1.5rem}
@@ -14,6 +14,34 @@ body{
   body{
     padding-top:0;
     padding-left:23rem
+  }
+  .ppsubheading{
+    max-width: 650px;
+    text-transform:none;
+    font-weight:500;
+    font-family:'Segoe UI',Arial,sans-serif;
+    font-size:1.5rem
+  }
+}
+@media(max-width:991.9px){
+  .TheWholeContent{
+    padding-left:1rem;
+    padding-right:1rem;
+  }
+  body{
+    padding-left:0rem;
+    margin-left: 0rem;
+  }
+  h1{
+    text-transform:none;
+    font-size:2.5rem
+  }
+  .ppsubheading{
+    max-width: 650px;
+    text-transform:none;
+    font-weight:400;
+    font-family:'Segoe UI',Arial,sans-serif;
+    font-size:1.4rem
   }
 }
 .subheading{
@@ -33,6 +61,15 @@ body{
 @media (min-width:992px){
   .BodyContent{
     padding-top:3rem!important;
+    padding-bottom:3rem!important
+  }
+}
+@media (max-width:767.9px){
+  .BodyContent{min-height:100vh}
+  .BodyContent{min-width:18rem}
+}
+@media (max-width:991.9px){
+  .BodyContent{
     padding-bottom:3rem!important
   }
 }
@@ -68,6 +105,9 @@ body{
     max-height:10rem;
     border:.5rem solid rgba(255,255,255,.2)
   }
+  #sideNav .navbar-toggler{
+    display: none;
+  }
   #sideNav .Menu{
     display:flex;
     align-items:center;
@@ -87,8 +127,36 @@ body{
     text-decoration:none;
   }
 }
+@media (max-width:991.9px) {
+  #sideNav{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+  }
+  #sideNav .navbar-brand{
+    display: none;
+  }
+  #sideNav .navbar-text{
+    display: none;
+  }
+  #sideNav .navbar-toggler{
+    display: inline-block;
+  }
+  .collapse:not(.show) {
+    display: none;
+  }
+  #sideNav .Menu .MenuList .Menu-item .Menu-link{
+    display:block;
+    padding:5px;
+    text-decoration:none;
+  }
+}
 ul {
-  padding-inline-start:0px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 .bg-primary{background-color:#243c7a!important}
 li a.active {

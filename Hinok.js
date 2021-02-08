@@ -12,14 +12,44 @@ var topMenu = $("#Menu"),
     });
 
 $(function(){
+  $('button').click(function(e){
+    var test = document.getElementById("Menu");
+    e.preventDefault();
+    if(test.classList.contains("collapse")){
+      if(!test.classList.contains("show")){
+        topMenu.addClass("show");
+        for (i=0; i<menuItems.length;i++){
+          if (menuItems[i].style.maxHeight){
+            menuItems[i].style.maxHeight = null;
+          } else {
+            menuItems[i].style.maxHeight = menuItems[i].scrollHeight + "px";
+          }
+        }
+
+      }
+      else {
+        topMenu.removeClass("show");
+      }
+    }
+  });
+
   $('a').click(function(){
     var target = $(this.hash);
     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
     if (target.length) {
-      $('html,body').animate({
-        scrollTop: target.offset().top
-      }, 1000);
-      return false;
+      if(window.screen.width < 992){
+        $('html,body').animate({
+          scrollTop: target.offset().top-70
+        }, 1000);
+        return false;
+      }
+      else {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+
     }
   });
 
