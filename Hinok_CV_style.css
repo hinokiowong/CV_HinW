@@ -10,7 +10,17 @@ body{
   font-family:'Segoe UI',Arial,sans-serif;
   padding-top:54px;color:black
 }
-@media(min-width:992px){
+.subheading{
+  text-transform:none;
+  font-weight:500;
+  font-family:'Segoe UI',Arial,sans-serif;
+  font-size:1.5rem
+}
+.Description{
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+@media (min-width:992px){
   body{
     padding-top:0;
     padding-left:23rem
@@ -22,69 +32,10 @@ body{
     font-family:'Segoe UI',Arial,sans-serif;
     font-size:1.5rem
   }
-}
-@media(max-width:991.9px){
-  .TheWholeContent{
-    padding-left:1rem;
-    padding-right:1rem;
-  }
-  body{
-    padding-left:0rem;
-    margin-left: 0rem;
-  }
-  h1{
-    text-transform:none;
-    font-size:2.5rem
-  }
-  .ppsubheading{
-    max-width: 650px;
-    text-transform:none;
-    font-weight:400;
-    font-family:'Segoe UI',Arial,sans-serif;
-    font-size:1.4rem
-  }
-}
-.subheading{
-  text-transform:none;
-  font-weight:500;
-  font-family:'Segoe UI',Arial,sans-serif;
-  font-size:1.5rem
-}
-.Description{
-  padding-top: 20px;
-  padding-bottom: 50px;
-}
-@media (min-width:768px){
-  .BodyContent{min-height:100vh}
-  .BodyContent{min-width:18rem}
-}
-@media (min-width:992px){
   .BodyContent{
     padding-top:3rem!important;
     padding-bottom:3rem!important
   }
-}
-@media (max-width:767.9px){
-  .BodyContent{min-height:100vh}
-  .BodyContent{min-width:18rem}
-}
-@media (max-width:991.9px){
-  .BodyContent{
-    padding-bottom:3rem!important
-  }
-}
-#sideNav .MenuList .Menu-item .Menu-link{
-  font-weight:800;
-  letter-spacing:.05rem;
-  text-transform:none
-}
-#sideNav .navbar-toggler:focus{
-  outline-color:blue
-}
-#sideNav .navbar-text{
-  color: white;
-}
-@media (min-width:992px){
   #sideNav{
     text-align:center;
     position:fixed;
@@ -127,7 +78,29 @@ body{
     text-decoration:none;
   }
 }
-@media (max-width:991.9px) {
+@media (max-width:991.9px){
+  .BodyContent{
+    padding-bottom:3rem!important
+  }
+  .TheWholeContent{
+    padding-left:1rem;
+    padding-right:1rem;
+  }
+  body{
+    padding-left:0rem;
+    margin-left: 0rem;
+  }
+  h1{
+    text-transform:none;
+    font-size:2.5rem
+  }
+  .ppsubheading{
+    max-width: 650px;
+    text-transform:none;
+    font-weight:400;
+    font-family:'Segoe UI',Arial,sans-serif;
+    font-size:1.4rem
+  }
   #sideNav{
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
@@ -150,6 +123,33 @@ body{
     padding:5px;
     text-decoration:none;
   }
+  img.logo{
+    width: 100px;
+    height: 100px;
+  }
+  img.Maillogo{
+    width:120px;
+    height: 80px;
+  }
+}
+@media (min-width:768px){
+  .BodyContent{min-height:100vh}
+  .BodyContent{min-width:18rem}
+}
+@media (max-width:767.9px){
+  .BodyContent{min-height:100vh}
+  .BodyContent{min-width:18rem}
+}
+#sideNav .MenuList .Menu-item .Menu-link{
+  font-weight:800;
+  letter-spacing:.05rem;
+  text-transform:none
+}
+#sideNav .navbar-toggler:focus{
+  outline-color:blue
+}
+#sideNav .navbar-text{
+  color: white;
 }
 ul {
   margin-block-start: 1em;
