@@ -39,7 +39,7 @@ $(function(){
     if (target.length) {
       if(window.screen.width < 992){
         $('html,body').animate({
-          scrollTop: target.offset().top-70
+          scrollTop: target.offset().top-56
         }, 1000);
         return false;
       }

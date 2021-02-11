@@ -6,9 +6,14 @@ h1{font-size:3.5rem}
 h2{font-size:3.5rem}
 h3{font-size:2rem}
 h4{font-size:1.5rem}
+hr{opacity: 0;}
 body{
   font-family:'Segoe UI',Arial,sans-serif;
-  padding-top:54px;color:black
+  padding-top:54px;
+  color:black;
+}
+.checked {
+  color: orange;
 }
 .subheading{
   text-transform:none;
@@ -20,21 +25,115 @@ body{
   padding-top: 20px;
   padding-bottom: 50px;
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+}
+.R_Title {
+  color: grey;
+  font-size: 18px;
+}
+.R_Name {
+  color: black;
+  font-size: 25px;
+}
+.Reference_Icon a{
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.site-footer .footer_contact_link {
+  text-decoration:none;
+  color: white;
+}
+.site-footer .footer_contact_linkIcon_list a{
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+}
 @media (min-width:992px){
+  .vertical_list{
+    display:none;
+  }
   body{
     padding-top:0;
-    padding-left:23rem
+    padding-left:20rem;
+    background-image: url(image/UOS.jpg);
+    background-repeat: no-repeat;
+    background-size: 110% auto;
+    background-attachment: fixed;
   }
   .ppsubheading{
     max-width: 650px;
     text-transform:none;
-    font-weight:500;
+    font-weight:450;
     font-family:'Segoe UI',Arial,sans-serif;
-    font-size:1.5rem
+    font-size:1.25rem
   }
   .BodyContent{
     padding-top:3rem!important;
-    padding-bottom:3rem!important
+    margin-bottom:10rem!important;
+    padding-left:2rem;
+    min-height:100vh;
+    min-width:18rem;
+  }
+  #About{
+    background-color: #c2d3fc;
+  }
+  #Work_Experience{
+    background-color: #d6e2ff;
+  }
+  #Academic_History{
+    background-color: #d4e0fc;
+  }
+  #Skill{
+    background-color: #dee8ff;
+  }
+  #Reference{
+    background-color: #e8efff;
+  }
+  .BodyContent .img-profile{
+    max-width:10rem;
+    max-height:10rem;
+    border:.5rem solid rgba(255,255,255,.2)
+  }
+  #Landing_Page{
+    background-image: url(image/World.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    text-align: center;
+  }
+  .landing_page_elements{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .landing_page_title{
+    font-family:'Segoe UI',Arial,sans-serif;
+    font-size: 3rem;
+    color:white;
+  }
+  .landing_page_title hr {
+    opacity: 1;
+    width:50%;
+    border-width:2px;
+  }
+  .landing_page_describe {
+    font-family:'Segoe UI',Arial,sans-serif;
+    font-size: 3.25rem;
+    color:white;
+    width:60%;
+    display:inline-block;
+  }
+  .landing_page_describe strong {
+    color:orange;
   }
   #sideNav{
     text-align:center;
@@ -51,10 +150,10 @@ body{
     margin:auto auto 0;
     padding:.5rem
   }
-  #sideNav .navbar-brand .img-profile{
+  #sideNav .navbar-brand .img-side{
     max-width:10rem;
     max-height:10rem;
-    border:.5rem solid rgba(255,255,255,.2)
+    /* border:.5rem solid rgba(255,255,255,.2) */
   }
   #sideNav .navbar-toggler{
     display: none;
@@ -77,10 +176,36 @@ body{
     padding:5px;
     text-decoration:none;
   }
+
+  .site-footer {
+    background-color: #243c7a;
+    padding-left:0;
+    margin-left: -42px;
+    padding-top: 20px;
+    margin-top: -272px;
+    padding-bottom: 110px;
+    margin-right: -8px;
+    text-align:center;
+    align-items: center;
+    color: white;
+  }
 }
 @media (max-width:991.9px){
+  .horizontal_flipCard_list{
+    display:none;
+  }
   .BodyContent{
-    padding-bottom:3rem!important
+    padding-bottom:3rem!important;
+    margin-right: -24px;
+    margin-left: -30px;
+    padding-left:30px;
+    padding-right:20px;
+    min-height:90vh;
+    min-width:18rem;
+  }
+  .landingPageContent{
+    padding-left:-30px;
+    margin-top: -6px;
   }
   .TheWholeContent{
     padding-left:1rem;
@@ -89,6 +214,10 @@ body{
   body{
     padding-left:0rem;
     margin-left: 0rem;
+    background-image: url(image/UOS.jpg);
+    background-repeat: no-repeat;
+    background-size: 300% auto;
+    background-attachment: fixed;
   }
   h1{
     text-transform:none;
@@ -100,6 +229,56 @@ body{
     font-weight:400;
     font-family:'Segoe UI',Arial,sans-serif;
     font-size:1.4rem
+  }
+  #About .img-profile{
+    display: none;
+  }
+  #Landing_Page{
+    background-image: url(image/World.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300% auto;
+    background-attachment: fixed;
+    text-align: center;
+  }
+  .landing_page_elements{
+    margin: auto;
+  }
+  .landing_page_title{
+    padding-top: 178px;
+    font-family:'Segoe UI',Arial,sans-serif;
+    font-size: 2rem;
+    color:white;
+  }
+  .landing_page_title hr {
+    opacity: 1;
+    width:50%;
+    border-width:2px;
+  }
+  .landing_page_describe {
+    font-family:'Segoe UI',Arial,sans-serif;
+    font-size: 1.5rem;
+    color:white;
+    width:60%;
+    display:inline-block;
+  }
+  .landing_page_describe strong {
+    color:orange;
+  }
+  #About{
+    background-color: #c2d3fc;
+  }
+  #Work_Experience{
+    background-color: #d6e2ff;
+  }
+  #Academic_History{
+    background-color: #d4e0fc;
+  }
+  #Skill{
+    background-color: #dee8ff;
+  }
+  #Reference{
+    background-color: #e8efff;
   }
   #sideNav{
     position: fixed; /* Set the navbar to fixed position */
@@ -123,22 +302,17 @@ body{
     padding:5px;
     text-decoration:none;
   }
-  img.logo{
-    width: 100px;
-    height: 100px;
+  .site-footer {
+    background-color: #243c7a;
+    padding-left: 0;
+    margin-left: -10px;
+    padding-top: 20px;
+    margin-top: -320px;
+    padding-bottom: 110px;
+    margin-right: -10px;
+    text-align:center;
+    color: white;
   }
-  img.Maillogo{
-    width:120px;
-    height: 80px;
-  }
-}
-@media (min-width:768px){
-  .BodyContent{min-height:100vh}
-  .BodyContent{min-width:18rem}
-}
-@media (max-width:767.9px){
-  .BodyContent{min-height:100vh}
-  .BodyContent{min-width:18rem}
 }
 #sideNav .MenuList .Menu-item .Menu-link{
   font-weight:800;
@@ -167,4 +341,43 @@ li a:hover:not(.active) {
 }
 li a{
   color:white; opacity: 0.5;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #243c7a;
+  color: white;
+  transform: rotateY(180deg);
 }
