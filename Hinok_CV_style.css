@@ -64,7 +64,7 @@ body{
   body{
     padding-top:0;
     padding-left:20rem;
-    background-image: url(image/UOS.jpg);
+    background-image: url(image/UOS.png);
     background-repeat: no-repeat;
     background-size: 110% auto;
     background-attachment: fixed;
@@ -104,7 +104,7 @@ body{
     border:.5rem solid rgba(255,255,255,.2)
   }
   #Landing_Page{
-    background-image: url(image/World.jpg);
+    background-image: url(image/World.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
@@ -215,10 +215,10 @@ body{
   body{
     padding-left:0rem;
     margin-left: 0rem;
-    /* background-image: url(image/UOS.jpg);
+    background-image: url(image/UOS.png);
     background-repeat: no-repeat;
     background-size: 300% auto;
-    background-attachment: fixed; */
+    background-attachment: fixed;
   }
   h1{
     text-transform:none;
@@ -235,7 +235,7 @@ body{
     display: none;
   }
   #Landing_Page{
-    background-image: url(image/World.jpg);
+    background-image: url(image/World.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 300% auto;
