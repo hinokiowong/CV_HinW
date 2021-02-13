@@ -247,6 +247,7 @@ button.active, .collapsible:hover {
     background-repeat: no-repeat;
     background-size: 300% auto;
     background-attachment: fixed;
+    overflow-x: hidden;
   }
   h1{
     text-transform:none;
