@@ -15,6 +15,28 @@ body{
 .checked {
   color: orange;
 }
+.collapsible {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+button.active, .collapsible:hover {
+  background-color: orange;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 .subheading{
   text-transform:none;
   font-weight:500;
@@ -59,6 +81,9 @@ body{
 }
 @media (min-width:992px){
   .vertical_list{
+    display:none;
+  }
+  .WE_phoneVer {
     display:none;
   }
   body{
@@ -195,6 +220,9 @@ body{
   .horizontal_flipCard_list{
     display:none;
   }
+  .WE_WebList {
+    display:none;
+  }
   .BodyContent{
     padding-bottom:3rem!important;
     margin-right: -24px;
@@ -236,9 +264,9 @@ body{
   }
   #Landing_Page{
     background-image: url(image/World.png);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position: center;
-    background-size: 300% auto;
+    /* background-size: 200% auto; */
     background-attachment: fixed;
     text-align: center;
   }
